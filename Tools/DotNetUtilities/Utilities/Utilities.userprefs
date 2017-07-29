@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{0322D39B-D505-48C8-9A34-3BD8BECE61D4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Utilities/TrafficDataJoiner.cs">
+    <Files>
+      <File FileName="Utilities/Program.cs" Line="12" Column="26" />
+      <File FileName="Utilities/TrafficDataJoiner.cs" Line="74" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Utilities PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
