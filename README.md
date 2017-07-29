@@ -1,4 +1,4 @@
-# Path through Canberra by avoiding potential areas with speed cameras
+# Avoid your next speeding fine 🚔🎥🏎️⏩️💸
 
 Simply time in where you want to go and we'll give you directions with the least probability of 
 
