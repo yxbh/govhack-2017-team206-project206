@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "copyright": "This data has been transformed from the dataset ACT Transport datasets: https://www.data.act.gov.au/d/2sx9-4wg7 and https://www.data.act.gov.au/d/426s-vdu4 for a Canberra GovHack2017 entry",
+  "timestamp": "2017-07-29T09:50:01Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "SumPenAmt": "314",
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -35.19198,
+            149.08327
+        ]
+      }
+    }
+  ]
+}
