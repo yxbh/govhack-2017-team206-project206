@@ -1,6 +1,6 @@
 # Avoid your next speeding fine 🚔🎥🏎️⏩️💸
 
-Simply time in where you want to go and we'll give you directions with the least probability of 
+Simply type in where you want to go and we'll give you directions with the least probability of getting a speeding ticket based on the amount of fines handed out for particular roads!
 
 # License
 
