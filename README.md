@@ -4,7 +4,7 @@ Simply type in where you want to go and we'll give you directions with the least
 
 # License
 
-??? something public
+MIT License
 
 # Installation
 
