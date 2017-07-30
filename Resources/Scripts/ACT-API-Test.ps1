@@ -1,4 +1,5 @@
 $url = "https://www.data.act.gov.au/resource/up3x-9a8h"
+$locs = "https://www.data.act.gov.au/resource/h534-v2x9"
 $apptoken = "sKOWMPx5jiwrYUQYHMgRYNlXV"
 
 # Set header to accept JSON
@@ -8,4 +9,12 @@ $headers.Add("X-App-Token",$apptoken)
 
 
 
-$results = Invoke-RestMethod -Uri $url -Method get -Headers $headers
+$fines = Invoke-RestMethod -Uri $url -Method get -Headers $headers
+
+$locations = Invoke-RestMethod -Uri $locs -Method get -Headers $headers 
+
+foreach ($location in $locations) {
+   
+    Invoke-RestMethod -Uri $url -Method get -Headers $headers -Body {location_code : $(location.location_code) }
+    
+}
