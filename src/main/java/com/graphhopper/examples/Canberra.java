@@ -97,15 +97,15 @@ public class Canberra {
                         }.forServer().init(args);
                         tmpHopper.importOrLoad();
                         LocationIndex index = tmpHopper.getLocationIndex();
-                        logger.info("loaded graph at:" + tmpHopper.getGraphHopperLocation()
-                                + ", source:" + tmpHopper.getOSMFile()
-                                + ", flagEncoders:" + tmpHopper.getEncodingManager()
+                        logger.info("loaded graph at:" + tmpHopper.getGraphHopperLocation() + ", source:"
+                                + tmpHopper.getOSMFile() + ", flagEncoders:" + tmpHopper.getEncodingManager()
                                 + ", class:" + tmpHopper.getGraphHopperStorage().toDetailsString());
 
                         // TODO LATER make persistent and only on graph import!
                         int objectCnt = 0;
                         try {
-                            String jsonStr = Helper.isToString(new FileInputStream(new File("./Resources/cameras.geojson")));
+                            String jsonStr = Helper
+                                    .isToString(new FileInputStream(new File("./Resources/cameras.geojson")));
                             JSONObject json = new JSONObject(jsonStr);
                             JSONArray entries = json.getJSONArray("features");
 
@@ -136,10 +136,10 @@ public class Canberra {
                                 QueryResult qr = index.findClosest(lat, lon, EdgeFilter.ALL_EDGES);
                                 // include all surrounding edges too
 
-                                EdgeIterator iter = explorer.setBaseNode(qr.getClosestNode());
-                                while (iter.next()) {
-                                    avoidEdgeIds.add(iter.getEdge());
-                                }
+                                // EdgeIterator iter = explorer.setBaseNode(qr.getClosestNode());
+                                // while (iter.next()) {
+                                //     avoidEdgeIds.add(iter.getEdge());
+                                // }
                             }
                         } catch (Exception ex) {
                             logger.error("Error for " + objectCnt + " while json import " + ex.getMessage(), ex);
