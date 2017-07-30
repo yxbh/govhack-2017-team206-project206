@@ -1,5 +1,8 @@
 # Avoid your next speeding fine 🚔🎥🏎️⏩️💸
 
+Govhack Canberra 2017 entry:
+https://2017.hackerspace.govhack.org/project/fine-away
+
 Simply type in where you want to go and we'll give you directions with the least probability of getting a speeding ticket based on the amount of fines handed out for particular roads!
 
 # License
@@ -8,9 +11,17 @@ MIT License
 
 # Installation
 
+ * install Java
  * git clone
- * get the area of your choice in OSM PBF (Open Street Map protobuff) format 
- * update the export.geojson if not Canberra (defaults to canberra traffic camera dataset)
- * `mvn clean install assembly:single`
- * `java -jar target/avoid-camera-route-Canberra-1.0-SNAPSHOT-jar-with-dependencies.jar osmreader.osm=Resources/canberra.osm.pbf config=config.properties`
- * change the weighting in the URL to 'avoidcamera' instead of fastest (or another type of weighting)
+ * get the area of your choice in OSM PBF (Open Street Map protobuff) format, we're (obviously) using Canberra 
+ * update the cameras.geojson if not Canberra (defaults to canberra traffic camera dataset)
+ * run `mvn clean install assembly:single`
+ * run `java -jar target/avoid-camera-route-Canberra-1.0-SNAPSHOT-jar-with-dependencies.jar osmreader.osm=Resources/canberra.osm.pbf config=config.properties`
+ * change the weighting in the URL to 'avoidcamera' instead of fastest (or another type of weighting) (this is not default!)
+ 
+ # Under the hood
+ 
+ We're using the Graphhopper routing engine to weight the closest edges to a lat, long where a speeding fine has been issued.
+ The higher the total fine ammount issued, the higher the weighting is for a road segment.
+ Thus, this is an optimization problem where the map trys to reduce the weighting from point A to B.
+ Using an A\* implementation. Yay for graph theory. That was a nice refresher (and stressful one at that)
