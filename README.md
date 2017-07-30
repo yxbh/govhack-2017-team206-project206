@@ -1,4 +1,6 @@
-# Avoid your next speeding fine 🚔🎥🏎️⏩️💸
+# Fine me a way 🚔🎥🏎️⏩️💸
+
+Avoid your next speeding fine, help reduce government administrative expenditure
 
 Govhack Canberra 2017 entry:
 https://2017.hackerspace.govhack.org/project/fine-away
