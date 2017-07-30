@@ -17,6 +17,8 @@ MIT License
  * update the cameras.geojson if not Canberra (defaults to canberra traffic camera dataset)
  * run `mvn clean install assembly:single`
  * run `java -jar target/avoid-camera-route-Canberra-1.0-SNAPSHOT-jar-with-dependencies.jar osmreader.osm=Resources/canberra.osm.pbf config=config.properties`
+ * wait for the server to load (should be very quick) You should see `Started server at HTTP :8989`
+ * open http://localhost:8989
  * change the weighting in the URL to 'avoidcamera' instead of fastest (or another type of weighting) (this is not default!)
  
  # Under the hood
