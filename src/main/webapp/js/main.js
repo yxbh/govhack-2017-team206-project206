@@ -611,6 +611,9 @@ function initMap(selectLayer) {
         }
     });
 
+    var geojsonLayer = new L.GeoJSON.AJAX("../../../../Resources/cameras.geojson");   
+    geojsonlayer.addTo(map);
+
     L.control.scale().addTo(map);
 
     map.fitBounds(new L.LatLngBounds(new L.LatLng(bounds.minLat, bounds.minLon),

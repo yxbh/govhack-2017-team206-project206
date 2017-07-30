@@ -39,7 +39,7 @@ with open(os.path.join(dir, '..', 'Resources', 'traffic_join_output.csv'), 'r') 
         if (count % 1000):
             print(count)
 
-        if (count > 1000):
-            break
+        # if (count > 3):
+        #     break
     
     jsonfile.write("]}")
