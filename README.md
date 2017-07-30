@@ -24,6 +24,6 @@ MIT License
  # Under the hood
  
  We're using the Graphhopper routing engine to weight the closest edges to a lat, long where a speeding fine has been issued.
- The higher the total fine ammount issued, the higher the weighting is for a road segment.
- Thus, this is an optimization problem where the map trys to reduce the weighting from point A to B.
+ The higher the total fine amount issued, the higher the weighting is for that road segment.
+ Thus, this is an optimization problem where the map tries to reduce the weighting from point A to B.
  Using an A\* implementation. Yay for graph theory. That was a nice refresher (and stressful one at that)
